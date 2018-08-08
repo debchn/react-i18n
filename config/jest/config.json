@@ -9,5 +9,6 @@
   },
   "moduleNameMapper": {
     "^tests/(.*)": "<rootDir>/tests/$1"
-  }
+  },
+  "testEnvironment": "node"
 }

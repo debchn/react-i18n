@@ -9,7 +9,7 @@ export interface TranslationGetter {
 }
 
 export interface Options {
-  id: string;
+  id?: string;
   fallback?: TranslationDictionary;
   translations?: TranslationGetter;
 }
