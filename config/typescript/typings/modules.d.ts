@@ -21,3 +21,11 @@ declare module 'react-tree-walker' {
     options?: {componentWillUnmount: boolean},
   ): Promise<void>;
 }
+
+declare module 'hoist-non-react-statics' {
+  function hoistNonReactStatics<P>(
+    to: React.ComponentClass<P>,
+    from: React.ComponentClass<any>,
+  ): React.ComponentClass<P>;
+  export = hoistNonReactStatics;
+}
